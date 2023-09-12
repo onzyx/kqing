@@ -1,4 +1,8 @@
 /* CSS styling for your page */
+body {
+    overflow-x: hidden; /* Tambahkan ini untuk menghindari geser horizontal */
+}
+
 header {
     background-color: #3498db;
     color: white;
@@ -32,7 +36,7 @@ header {
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
-    animation: moveBubble 20s linear infinite, fadeBubble 20s linear infinite;
+    animation: moveBubble 10s linear, fadeBubble 10s linear;
 }
 
 @keyframes moveBubble {
@@ -55,8 +59,7 @@ header {
 
 /* Styling for video container */
 #video-container {
-    height: 100vh; /* Tinggi setara dengan tinggi viewport */
-    overflow: hidden;
+    height: 100vh;
     position: relative;
 }
 .background-video {
