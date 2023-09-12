@@ -1,50 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Landing Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Onzy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Selamat Datang di Web onzy</h1>
-  </header>
-  <main>
-    <section class="content">
-      <p>Selamat datang di landing page dengan video latar belakang dan suara.</p>
-      <div class="video-container">
-        <video autoplay muted loop id="bgVideo">
-          <source src="video/mmb.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="audio-container">
-        <audio autoplay loop id="bgAudio">
-          <source src="musik/bbm.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-      <div class="button-container">
-        <button id="toggleAudioButton">Menyalakan</button>
-      </div>
-      <div class="console-container">
-        <div class="console-row">
-          <div class="console-cell"></div>
-          <div class="console-cell"></div>
-          <div class="console-cell"></div>
-        </div>
-        <div class="console-row">
-          <div class="console-cell"></div>
-          <div class="console-cell"></div>
-          <div class="console-cell"></div>
-        </div>
-        <div class="console-row">
-          <div class="console-cell"></div>
-          <div class="console-cell"></div>
-          <div class="console-cell"></div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <script src="JavaScript/script.js"></script>
+    <header>
+        <h1>Selamat Datang Di Web Onzy</h1>
+    </header>
+    <video id="myVideo" autoplay muted loop>
+        <source src="mmb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <button id="soundButton">Nyalakan Suara</button>
+    <script src="script.js"></script>
 </body>
 </html>
