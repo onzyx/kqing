@@ -6,13 +6,22 @@ header {
     text-align: center;
 }
 
-video {
-    width: 100%;
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
 }
 
 .styled-button {
-    display: block;
-    margin: 20px auto;
+    display: inline-block;
     padding: 10px 20px;
     background-color: #3498db;
     color: white;
