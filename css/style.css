@@ -61,6 +61,7 @@ header {
 #video-container {
     height: 100vh;
     position: relative;
+    overflow: hidden; /* Tambahkan ini untuk menghindari geser horizontal */
 }
 .background-video {
     position: absolute;
@@ -71,3 +72,4 @@ header {
     object-fit: cover;
     z-index: -1;
 }
+
