@@ -10,6 +10,17 @@ video {
     width: 100%;
 }
 
-button {
-    margin: 20px;
+.styled-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.styled-button:hover {
+    background-color: #2980b9;
 }
