@@ -18,8 +18,14 @@ h1 {
 
 .content {
   position: relative;
-  z-index: 1; /* Konten harus berada di atas elemen video */
+  z-index: 1;
   padding: 20px;
+  text-align: center; /* Mengatur teks ke tengah */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Mengisi tinggi seluruh tampilan (viewport) */
 }
 
 .video-background {
