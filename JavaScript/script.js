@@ -1,7 +1,6 @@
 const bgVideo = document.getElementById("bgVideo");
 const bgAudio = document.getElementById("bgAudio");
-const startButton = document.getElementById("startButton");
-const stopButton = document.getElementById("stopButton");
+const toggleAudioButton = document.getElementById("toggleAudioButton");
 
 // Mute audio saat dimulai
 bgAudio.muted = true;
@@ -10,11 +9,13 @@ bgAudio.muted = true;
 bgVideo.play();
 bgAudio.play();
 
-// Tombol untuk mengontrol audio
-startButton.addEventListener("click", function() {
-  bgAudio.muted = false; // Mengaktifkan audio
-});
-
-stopButton.addEventListener("click", function() {
-  bgAudio.muted = true; // Menonaktifkan audio
+// Tombol untuk mengontrol audio (mute/unmute)
+toggleAudioButton.addEventListener("click", function() {
+  if (bgAudio.muted) {
+    bgAudio.muted = false; // Mengaktifkan audio (unmute)
+    toggleAudioButton.textContent = "Mematikan"; // Mengubah teks tombol
+  } else {
+    bgAudio.muted = true; // Menonaktifkan audio (mute)
+    toggleAudioButton.textContent = "Menyalakan"; // Mengubah teks tombol
+  }
 });
