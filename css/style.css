@@ -14,11 +14,6 @@ header {
 
 h1 {
   font-size: 2rem;
-  margin: 0;
-  display: inline-block; /* Membuat teks "Selamat Datang di Halaman Onzy" mengikuti lebar latar belakang */
-  background: rgba(0, 0, 0, 0.5); /* Memberikan latar belakang teks agar terlihat lebih jelas */
-  padding: 10px; /* Menambahkan ruang di sekitar teks */
-  color: #fff; /* Warna teks */
 }
 
 .content {
@@ -28,19 +23,22 @@ h1 {
   text-align: center;
 }
 
-.video-background {
+.video-container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Memastikan elemen video berada di belakang */
+  z-index: -1;
 }
-
 
 #bgVideo {
   min-width: 100%;
   min-height: 100%;
+}
+
+.audio-container {
+  display: none;
 }
 
 .button-container {
@@ -56,6 +54,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   margin: 10px;
+}
 
 button:hover {
   background-color: #0056b3;
