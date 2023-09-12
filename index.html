@@ -8,12 +8,12 @@
 </head>
 <body>
   <header>
-    <h1>Selamat Datang Halaman onzy</h1>
+    <h1>Selamat Datang di Web onzy</h1>
   </header>
   <main>
     <section class="content">
-      <p>Selamat datang di Onzy web dengan video latar belakang dan suara.</p>
-      <div class="video-background">
+      <p>Selamat datang di landing page dengan video latar belakang dan suara.</p>
+      <div class="video-container">
         <video autoplay muted loop id="bgVideo">
           <source src="video/mmb.mp4" type="video/mp4">
         </video>
@@ -29,14 +29,6 @@
       </div>
     </section>
   </main>
-  <script>
-    // Ambil elemen video dan audio
-    const bgVideo = document.getElementById("bgVideo");
-    const bgAudio = document.getElementById("bgAudio");
-
-    // Mainkan video dan audio secara bersamaan
-    bgVideo.play();
-    bgAudio.play();
-  </script>
+  <script src="JavaScript/script.js"></script>
 </body>
 </html>
