@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar onzy</title>
-    <style>
-        /* Styling untuk halaman */
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        
-        /* Styling untuk judul */
-        h1 {
-            color: #333;
-            font-size: 36px;
-            margin-top: 150px;
-        }
-        
-        /* Styling untuk teks deskripsi */
-        p {
-            color: #666;
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Landing Page</title>
 </head>
 <body>
-    <h1>Selamat Datang di Belajar onzy</h1>
-    <p>Tempat Anda untuk memulai perjalanan belajar yang menarik.</p>
-    <p>Temukan berbagai materi belajar berkualitas tinggi di sini.</p>
-    <a href="#">Mulai Belajar</a> <!-- Ganti tautan ini dengan tautan yang sesuai -->
+  <header>
+    <h1>Selamat Datang di Landing Page</h1>
+  </header>
+  <main>
+    <section class="content">
+      <p>Selamat datang di landing page dengan video latar belakang dan suara.</p>
+      <div class="video-background">
+        <video autoplay muted loop id="bgVideo">
+          <source src="background.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="audio-container">
+        <audio autoplay loop>
+          <source src="background-audio.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="button-container">
+        <button id="startButton">Menyalakan</button>
+        <button id="stopButton">Mematikan</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
