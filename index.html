@@ -19,7 +19,7 @@
         </video>
       </div>
       <div class="audio-container">
-        <audio autoplay loop>
+        <audio autoplay loop id="bgAudio">
           <source src="musik/bbm.mp3" type="audio/mpeg">
         </audio>
       </div>
@@ -29,6 +29,14 @@
       </div>
     </section>
   </main>
-  <script src="JavaScript/script.js"></script>
+  <script>
+    // Ambil elemen video dan audio
+    const bgVideo = document.getElementById("bgVideo");
+    const bgAudio = document.getElementById("bgAudio");
+
+    // Mainkan video dan audio secara bersamaan
+    bgVideo.play();
+    bgAudio.play();
+  </script>
 </body>
 </html>
