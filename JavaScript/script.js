@@ -1,11 +1,17 @@
+const bgVideo = document.getElementById("bgVideo");
+const bgAudio = document.getElementById("bgAudio");
 const startButton = document.getElementById("startButton");
 const stopButton = document.getElementById("stopButton");
-const bgVideo = document.getElementById("bgVideo");
 
+// Memulai video dan audio bersamaan
+bgVideo.play();
+bgAudio.play();
+
+// Tombol untuk mengontrol audio
 startButton.addEventListener("click", function() {
-  bgVideo.play();
+  bgAudio.play();
 });
 
 stopButton.addEventListener("click", function() {
-  bgVideo.pause();
+  bgAudio.pause();
 });
