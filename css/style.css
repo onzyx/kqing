@@ -12,7 +12,7 @@ header {
     padding: 20px;
     text-align: center;
     position: relative;
-    z-index: 1; /* Menempatkan header di atas video dan gelembung */
+    z-index: 1; /* Menempatkan header di atas video */
 }
 
 #pageTitle {
@@ -30,37 +30,6 @@ header {
     z-index: 2;
 }
 
-/* Styling for bubble text */
-.bubble {
-    position: absolute;
-    left: -200px; /* Mulai dari luar sisi kiri */
-    top: 50%; /* Pusat vertikal gelembung */
-    font-size: 16px;
-    background-color: #3498db;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    animation: moveBubble 10s linear, fadeBubble 10s linear;
-}
-
-@keyframes moveBubble {
-    0% {
-        left: -200px;
-    }
-    100% {
-        left: 90%; /* Bergerak dari luar sisi kiri ke kanan hingga keluar dari layar */
-    }
-}
-
-@keyframes fadeBubble {
-    0%, 100% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-}
-
 /* Styling for video container */
 #video-container {
     height: 100vh;
@@ -69,10 +38,10 @@ header {
 }
 .background-video {
     position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     z-index: -1;
 }
-
