@@ -6,6 +6,20 @@ body {
     position: relative; /* Tambahkan ini untuk pengaturan yang akan datang */
 }
 
+#settings-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+.settings-button {
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 header {
     background-color: #3498db;
     color: white;
@@ -21,7 +35,7 @@ header {
 
 .speaker-button {
     position: absolute;
-    top: 10px;
+    bottom: 10px;
     right: 10px;
     font-size: 24px;
     background: transparent;
