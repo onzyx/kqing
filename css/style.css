@@ -31,7 +31,8 @@ header {
 /* Styling for bubble text */
 .bubble {
     position: absolute;
-    right: -100px;
+    left: 100%; /* Mulai dari sisi kiri layar */
+    top: 50%; /* Pusat vertikal gelembung */
     font-size: 16px;
     background-color: #3498db;
     color: white;
@@ -42,10 +43,10 @@ header {
 
 @keyframes moveBubble {
     0% {
-        right: -100px;
+        left: 100%;
     }
     100% {
-        right: 100%; /* Menggeser dari kanan ke kiri hingga keluar dari layar */
+        left: -100%; /* Bergerak dari kiri ke kanan hingga keluar dari layar */
     }
 }
 
