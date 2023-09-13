@@ -28,12 +28,12 @@ function createBubble() {
     const bubble = document.createElement('div');
     bubble.className = 'bubble';
     bubble.textContent = 'Teks Gelembung';
-    
+
     const randomPosition = Math.random() * (window.innerHeight - 100); // Posisi vertikal acak di dalam viewport
     const randomDelay = Math.random() * 10 + 2; // Waktu muncul acak (2-12 detik)
-    
+
     bubble.style.top = `${randomPosition}px`;
-    bubble.style.animationDelay = `${randomDelay}s`; // Set waktu muncul acak
+    bubble.style.animationDelay = `${randomDelay}s, ${-randomDelay}s`; // Set waktu muncul dan animasi secara bersamaan
     bubbleContainer.appendChild(bubble);
 
     // Hapus gelembung setelah animasi selesai
