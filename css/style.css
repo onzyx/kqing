@@ -1,6 +1,6 @@
 /* CSS styling for your page */
 body {
-    overflow-x: hidden; /* Tambahkan ini untuk menghindari geser horizontal */
+    overflow-x: hidden; /* Tambahkan ini untuk menghindari scroll horizontal */
 }
 
 header {
@@ -29,7 +29,7 @@ header {
 /* Styling for bubble text */
 .bubble {
     position: absolute;
-    top: 10px;
+    top: 50%; /* Pusat vertikal gelembung */
     right: -100px;
     font-size: 16px;
     background-color: #3498db;
@@ -61,7 +61,7 @@ header {
 #video-container {
     height: 100vh;
     position: relative;
-    overflow: hidden; /* Tambahkan ini untuk menghindari geser horizontal */
+    overflow: hidden; /* Tambahkan ini untuk menghindari scroll horizontal */
 }
 .background-video {
     position: absolute;
@@ -71,5 +71,4 @@ header {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-}
-
+    }
