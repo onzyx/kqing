@@ -43,3 +43,16 @@ function createBubble() {
 }
 
 setInterval(createBubble, 5000); // Buat gelembung baru setiap 5 detik
+
+// JavaScript to disable horizontal scrolling
+window.addEventListener('DOMContentLoaded', () => {
+    const scrollableElements = document.querySelectorAll('.scrollable');
+    
+    for (const element of scrollableElements) {
+        element.addEventListener('wheel', (e) => {
+            if (e.deltaY !== 0) {
+                e.preventDefault();
+            }
+        });
+    }
+});
