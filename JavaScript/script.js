@@ -14,10 +14,10 @@ soundButton.addEventListener('click', toggleSound);
 function toggleSound() {
     if (video.muted) {
         video.muted = false;
-        soundButton.textContent = '🔊 Matikan Suara';
+        soundButton.textContent = '🔊';
     } else {
         video.muted = true;
-        soundButton.textContent = '🔇 Nyalakan Suara';
+        soundButton.textContent = '🔇';
     }
 }
 
