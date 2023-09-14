@@ -3,22 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Onzy</title>
+    <title>Game Tebak Angka</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1 id="pageTitle">
-            Selamat Datang Di Web Onzy
-        </h1>
-    </header>
-    <div id="soundButtonContainer" class="styled-button">
-        <span id="soundButton" class="sound-off">🔇</span>
-    </div>
-    <video id="myVideo" autoplay muted loop class="background-video">
-        <source src="video/mmb.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <h1>Game Tebak Angka</h1>
+    <p>Masukkan angka antara 1 dan 100:</p>
+    <input type="number" id="guessInput">
+    <input type="submit" value="Submit Guess" id="guessSubmit">
+    <p id="message"></p>
     <script src="JavaScript/script.js"></script>
 </body>
 </html>
