@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Tebak Angka</title>
-    <link rel="stylesheet" href="css/style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Game Tebak Angka</title>
 </head>
 <body>
-    <h1>Game Tebak Angka</h1>
-    <p>Masukkan angka antara 1 dan 100:</p>
-    <input type="number" id="guessInput">
-    <input type="submit" value="Submit Guess" id="guessSubmit">
-    <p id="message"></p>
-    <script src="JavaScript/script.js"></script>
+   <h1>Game Tebak Angka</h1>
+   <p id="tebak-angka-info">Tebak angka dari 1 hingga 100:</p>
+   <input type="number" id="tebakan" placeholder="Masukkan angka">
+   <button onclick="tebakAngka()">Tebak</button>
+   <p id="hasil-tebakan"></p>
+   <button onclick="uploadFile()">Unggah File</button>
+   <input type="file" id="fileInput" style="display: none;">
+   <script src="JavaScript/game.js"></script>
 </body>
 </html>
