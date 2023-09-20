@@ -1,21 +1,17 @@
-const bgVideo = document.getElementById("bgVideo");
-const bgAudio = document.getElementById("bgAudio");
-const toggleAudioButton = document.getElementById("toggleAudioButton");
+// JavaScript to handle the mute/unmute functionality
+const video = document.getElementById('myVideo');
+const soundButton = document.getElementById('soundButton');
+let isMuted = true;
 
-// Mute audio saat dimulai
-bgAudio.muted = true;
+soundButton.addEventListener('click', toggleSound);
 
-// Memulai video dan audio bersamaan
-bgVideo.play();
-bgAudio.play();
-
-// Tombol untuk mengontrol audio (mute/unmute)
-toggleAudioButton.addEventListener("click", function() {
-  if (bgAudio.muted) {
-    bgAudio.muted = false; // Mengaktifkan audio (unmute)
-    toggleAudioButton.textContent = "Mematikan"; // Mengubah teks tombol
-  } else {
-    bgAudio.muted = true; // Menonaktifkan audio (mute)
-    toggleAudioButton.textContent = "Menyalakan"; // Mengubah teks tombol
-  }
-});
+function toggleSound() {
+    if (isMuted) {
+        video.muted = false;
+        soundButton.textContent = '🔊';
+    } else {
+        video.muted = true;
+        soundButton.textContent = '🔇';
+    }
+    isMuted = !isMuted;
+}
