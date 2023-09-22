@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Onzy</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kendali Lampu LED</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1 id="pageTitle">
-            Selamat Datang Di Web Onzy
-        </h1>
-    </header>
-    <div id="soundButtonContainer" class="styled-button">
-        <span id="soundButton" class="sound-off">🔇</span>
-    </div>
-    <video id="myVideo" autoplay muted loop class="background-video">
-        <source src="video/mmb.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <script src="JavaScript/script.js"></script>
+  <div class="container">
+    <h1>Selamat Datang</h1>
+    <p id="status">Lampu saat ini: -</p>
+    <button id="toggleButton">Nyalakan</button>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
