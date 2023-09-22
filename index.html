@@ -1,17 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kendali Lampu LED</title>
-  <link rel="stylesheet" href="css/style.css">
+    <title>Kontrol Lampu LED</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Selamat Datang</h1>
-    <p id="status">Lampu saat ini: -</p>
-    <button id="toggleButton">Nyalakan</button>
-  </div>
-  <script src="JavaScript/script.js"></script>
+    <h1>Kontrol Lampu LED</h1>
+    <button onclick="turnOn()">Nyalakan</button>
+    <button onclick="turnOff()">Matikan</button>
+
+    <script>
+        function turnOn() {
+            sendCommand('1'); // Kirim perintah ke Arduino untuk menyalakan LED
+        }
+
+        function turnOff() {
+            sendCommand('0'); // Kirim perintah ke Arduino untuk mematikan LED
+        }
+
+        function sendCommand(command) {
+            fetch('https://kqing.vercel.app/', { // Ubah URL sesuai dengan server Anda
+                method: 'POST',
+                body: JSON.stringify({ command }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Gagal mengirim perintah.');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Respon dari server:', data);
+            })
+            .catch(error => {
+                console.error('Terjadi kesalahan:', error);
+            });
+        }
+    </script>
 </body>
 </html>
