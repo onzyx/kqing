@@ -1,34 +1,24 @@
-/* CSS styling for your page */
-header {
-    background-color: #3498db;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: relative;
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 
-#pageTitle {
-    z-index: 2;
+.container {
+  margin: 100px auto;
+  max-width: 300px;
 }
 
-.styled-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    z-index: 2;
+h1 {
+  font-size: 24px;
 }
 
-.sound-off {
-    font-size: 24px;
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    object-fit: cover;
+#status {
+  font-size: 18px;
+  font-weight: bold;
 }
